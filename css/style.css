@@ -6,6 +6,10 @@
     color: rgb(139, 149, 158);
 }
 
+a{
+    text-decoration: none;
+}
+
 /* HEADER */
 header {
     width: 100%;
@@ -17,16 +21,51 @@ header {
     align-items: center;
 }
 
-header div{
+header ul{
     width: 15%;
     display: flex;
+    list-style: none;
     justify-content: space-between;
 }
 
-header a{
-    text-decoration: none;
-}
-
-header strong{
+header li a strong{
     color: rgb(25, 28, 31);;
 }
+
+/* MAIN */
+main {
+    width: 100%;
+    padding: 0 10%;
+}
+
+nav{
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h3{
+    color: rgb(25, 28, 31);
+    font-size: 1.8em;
+}
+
+nav ul{
+    width: 80%;
+    list-style: none;
+    display: flex;
+}
+
+nav ul li{
+    padding: 0 2%;
+}
+
+#button {
+    padding: 1%;
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+    border: none;
+    transition: 0.3s;
+}
+

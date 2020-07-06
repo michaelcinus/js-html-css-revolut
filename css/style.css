@@ -99,3 +99,40 @@ nav #nav-ul{
     transition: 0.3s;
 }
 
+/* PARTE PRINCIPALE */
+#parte-principale{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10%;
+}
+
+#section-title{
+    padding-right: 15%;
+}
+
+#section-title h1{
+    color: black;
+    padding-bottom: 2%;
+    font-size: 4em;
+}
+
+#inserisci-numero{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#prefisso , #numero{
+    border: none;
+    border-bottom: solid 1px rgb(25, 28, 31);
+}
+
+#btn-inizia{
+    background-color: rgba(25, 28, 31, 0.84);
+    padding: 10px;
+}
+
+#section-img img{
+    width: 80%;
+    height: auto;
+}

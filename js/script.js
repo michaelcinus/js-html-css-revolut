@@ -1,7 +1,9 @@
+$(document).ready(function(){
+  
 //EFFETTO HOVER SU LINK
 $("li a")
 .mouseover(function(){
-    $(this).css("color", "rgb(25, 28, 31)").toggle;
+    $(this).css("color", "rgb(25, 28, 31)");
   })
   .mouseout(function(){
     $(this).css("color", "rgb(139, 149, 158)");
@@ -15,3 +17,16 @@ $("li a")
   .mouseout(function(){
     $(this).css("opacity", "1");
   });
+
+  //EFFETTO dropdown
+  $('.parent-dropdown')
+  .mouseover(function() {
+    $(this).css("color", "rgb(25, 28, 31)");
+    $(this).children('.dropdown').toggle();
+  })
+  .mouseout(function(){
+      $(this).css("color", "rgb(139, 149, 158)");
+  });
+
+
+});

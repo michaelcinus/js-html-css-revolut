@@ -33,12 +33,10 @@ $("li a")
   $('#open')
   .click(function() {
     $('.hamburger-menu').addClass("visible");
-    $('fa-times').addClass("visible");
   })
 
   $("#close").click (function (){
     $(".hamburger-menu").removeClass("visible") ;
-    $('fa-times').removeClass("visible");
 
 });
 

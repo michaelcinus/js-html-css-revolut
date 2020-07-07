@@ -34,8 +34,27 @@ header li a strong{
     color: rgb(25, 28, 31);;
 }
 
-#close{
-    display: none;
+
+/* HEADER RESPONSIVE */
+.header-responsive {
+    width: 100%;
+    height: 4rem;
+    padding: 0 2%;
+    background: rgb(243, 244, 245);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-responsive ul{
+    width: 20%;
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+}
+
+.header-responsive li a strong{
+    color: rgb(25, 28, 31);;
 }
 
 /* MAIN */
@@ -113,11 +132,11 @@ nav #nav-ul{
 
 .hamburger-menu {
     position: absolute;
-    top: 5rem;
+    top: 0;
     left: 0;
     display: none;
     padding: 20px;
-    width: 100vh;
+    width: 100%;
     height: 100%;
     min-width: 100vw;
     min-height: 100vh;
@@ -126,7 +145,7 @@ nav #nav-ul{
 
 .hamburger-menu li{
     list-style: none;
-    margin: 2% 0;
+    margin: 2%;
 }
 
 
@@ -202,7 +221,7 @@ nav #nav-ul{
         text-align: center;
     }
 
-    .parent-dropdown, #inserisc-numero , h4 , #button, #azienda{
+    .parent-dropdown, #inserisc-numero , h4 , #button, header{
         display: none;
     }
     

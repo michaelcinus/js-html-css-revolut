@@ -10,6 +10,8 @@ a{
     text-decoration: none;
 }
 
+
+
 /* HEADER */
 header {
     width: 100%;
@@ -30,6 +32,10 @@ header ul{
 
 header li a strong{
     color: rgb(25, 28, 31);;
+}
+
+#close{
+    display: none;
 }
 
 /* MAIN */
@@ -99,6 +105,35 @@ nav #nav-ul{
     transition: 0.3s;
 }
 
+
+/* menu hamburger */
+#open{
+    display: none;
+}
+
+.hamburger-menu {
+    position: absolute;
+    top: 5rem;
+    left: 0;
+    display: none;
+    padding: 20px;
+    width: 100vh;
+    height: 100%;
+    min-width: 100vw;
+    min-height: 100vh;
+    background-color: white;
+}
+
+.hamburger-menu li{
+    list-style: none;
+    margin: 2% 0;
+}
+
+
+.sipario{
+    display: none;
+}
+
 /* PARTE PRINCIPALE */
 #parte-principale{
     display: flex;
@@ -159,3 +194,24 @@ nav #nav-ul{
     height: auto;
 }
 
+/* RESPONSIVE CELL */
+@media screen and (max-width: 1000px)
+{
+    #parte-principale{
+        display: block;
+        text-align: center;
+    }
+
+    .parent-dropdown, #inserisc-numero , h4 , #button, #azienda{
+        display: none;
+    }
+    
+
+    #open{
+        display: block;
+    }
+   
+    .hamburger-menu.visible{
+        display: block;
+    }
+}

@@ -29,4 +29,21 @@ $("li a")
   });
 
 
+  //sipario dropdown responsive
+  $('#open')
+  .click(function() {
+    $('.hamburger-menu').addClass("visible");
+    $('fa-times').addClass("visible");
+  })
+
+  $("#close").click (function (){
+    $(".hamburger-menu").removeClass("visible") ;
+    $('fa-times').removeClass("visible");
+
+});
+
+  $('.parent-sipario')
+  .click(function() {
+    $(this).children('.sipario').toggle();
+  })
 });

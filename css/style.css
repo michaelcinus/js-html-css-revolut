@@ -24,10 +24,10 @@ header {
 }
 
 header ul{
-    width: 15%;
+    width: 19%;
     display: flex;
     list-style: none;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 header li a strong{

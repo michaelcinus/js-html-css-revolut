@@ -30,10 +30,12 @@ $("li a")
   $('.parent-dropdown')
   .mouseover(function() {
     $(this).css("color", "rgb(25, 28, 31)");
-    $(this).children('.dropdown').toggle();
+    $(this).css("cursor", "pointer");
+    $(this).children('.dropdown').show();
   })
   .mouseout(function(){
       $(this).css("color", "rgb(139, 149, 158)");
+      $(this).children('.dropdown').hide();
   });
 
 

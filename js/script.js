@@ -18,6 +18,14 @@ $("li a")
     $(this).css("opacity", "1");
   });
 
+  $("#footer-button")
+  .mouseover(function(){
+      $(this).css("opacity", "0.7");
+    })
+    .mouseout(function(){
+      $(this).css("opacity", "1");
+    });
+
   //EFFETTO dropdown
   $('.parent-dropdown')
   .mouseover(function() {

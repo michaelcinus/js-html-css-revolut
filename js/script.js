@@ -44,14 +44,29 @@ $("li a")
   .click(function() {
     $('.hamburger-menu').addClass("visible");
   })
+  .mouseover(function(){
+    $(this).css("cursor", "pointer");
+  })
 
   $("#close").click (function (){
     $(".hamburger-menu").removeClass("visible") ;
+  })
+  .mouseover(function(){
+    $(this).css("cursor", "pointer");
+  });
 
-});
+  $(".titolo-sipario")
+  .mouseover(function(){
+      $(this).css("color", "rgb(25, 28, 31)");
+      $(this).css("cursor", "pointer");
+    })
+    .mouseout(function(){
+      $(this).css("color", "rgb(139, 149, 158)");
+      $(this).css("cursor", "pointer");
+    });
 
   $('.parent-sipario')
   .click(function() {
-    $(this).children('.sipario').toggle();
+    $(this).children('.sipario').toggle(500);
   })
 });

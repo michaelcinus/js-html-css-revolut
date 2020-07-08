@@ -135,9 +135,7 @@ nav #nav-ul{
     top: 0;
     left: 0;
     display: none;
-    padding: 20px;
     width: 100%;
-    min-width: 100vw;
     min-height: 100vh;
     background-color: white;
 }
@@ -147,20 +145,34 @@ nav #nav-ul{
     margin: 2%;
 }
 
+.titolo-sipario  {
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
 
 .sipario{
+
+    padding: 1% 20px;
     display: none;
+    background-color: white;
+}
+
+.sipario li{
+    margin : 2% 0 ;
 }
 
 /* PARTE PRINCIPALE */
 #parte-principale{
     display: flex;
     justify-content: space-around;
-    padding-top: 10%;
+    padding-top: 8%;
 }
 
 /* SECTION TITOLO */
 #section-title{
+    padding-top: 5%;
     padding-right: 15%;
 }
 
@@ -208,7 +220,7 @@ nav #nav-ul{
 /* SECTION IMMAGINE */
 
 #section-img img {
-    width: 80%;
+    width: 90%;
     height: auto;
 }
 
@@ -237,19 +249,25 @@ footer{
     #parte-principale{
         display: block;
         text-align: center;
+        display: flex;
+        flex-direction: column;
+        padding: 0 15%;
     }
 
     .parent-dropdown, #inserisc-numero , h4 , #button, header{
         display: none;
     }
     
-
     #open{
         display: block;
     }
    
     .hamburger-menu.visible{
         display: block;
+    }
+
+    main{
+        padding: 0 5%;
     }
 
     footer{
